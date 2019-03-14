@@ -1,0 +1,50 @@
+<!GPA CALCULATOR, Lane Moseley, 12/13/2018>
+<!DOCTYPE html>
+
+<html>
+    <style>
+    body {
+        background-color: #e1f3ff;
+    }
+
+    table.center {
+        margin-left:auto; 
+        margin-right:auto;
+    }
+
+    td {
+        font-weight: bold;
+        background-color: whitesmoke;
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    </style>
+     
+        <body>
+            
+            <table class="center" id="theTable">
+
+            <tr><th></th><td colspan="2" align = "center">GPA CALCULATOR</td></tr>
+            <tr><th></th><td>Cummulative GPA: <input type="number" id="gpa" value="0.00"></td>
+                        <td>Credits taken so far: <input type="number" id="credits" value="0"></td>
+            
+            <tr><th></th><td>Credits</td><td>Grade</td></tr>
+            
+            <tr><td>Class #1:</td> <td><input type="number" id="c1" value="0"></td> <td><input type="text" id="g1" value="A"></td>
+            <tr><td>Class #2:</td> <td><input type="number" id="c2" value="0"></td> <td><input type="text" id="g2" value="A"></td>
+            <tr><td>Class #3:</td> <td><input type="number" id="c3" value="0"></td> <td><input type="text" id="g3" value="A"></td>
+            
+            <tr align="center"><th></th><td colspan="2">
+                <button onclick="addRow()">Add Row</button>
+                &nbsp;<button onclick="deleteRow()">Remove Row</button>
+                &nbsp;<button onclick="reset()">Reset Fields</button>
+                <br><br><button onclick="calculateGPA()">Calculate</button></td></tr>
+            
+            </table>
+
+            <table class="center" id="results"></table>
+            
+            <script src="gpaCalculator.js"></script>
+        </body>
+</html>
