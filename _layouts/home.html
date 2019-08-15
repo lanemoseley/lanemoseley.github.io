@@ -3,43 +3,36 @@ layout: default
 ---
 
 <div class="home">
-   {%- if page.title -%}
-      <h1 class="page-heading">{{ page.title }}</h1>
-   {%- endif -%}
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
 
+  {{ content }}
 
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
 
-   {{ content }}
-
-
-
-   <div style="margin-left: 40px; float: right;">
-      {%- include social.html -%}
-      <p style="float: right;"><img src="Moseley_Headshot.jpg" alt="Lane Moseley" border="1px"></p>
-   </div>
-
-   <div style="clear: left;">
-      <h2>About</h2>
-      <p>I have a diverse background that includes a B.A. in English from Colorado State University and a three-year stretch in the automotive industry as a Master Certified Technician.  Currently,  I am pursing a B.S. in Computer Science with a minor in Mathematics at South Dakota School of Mines &amp; Technology (SD Mines).  I plan to also complete a M.S. in Computational Sciences and Robotics while at SD Mines.  My commitment to academic excellence has produced a 3.82 GPA for all SD Mines coursework and placement on the Dean’s List.</p>
-      <br/>
-   </div>
-
-   <div style="clear: left;">
-   <h2>Featured Projects</h2>
-   <p><a href="https://github.com/lanemoseley/BinaryClock" target="_blank">Binary Clock</a> - written in Python using the Tk Interface</p>
-   <p><a href="https://github.com/lanemoseley/mini-paint" target="_blank">Mini Paint</a> - GUI program written in C++ using the GLUT library</p>
-   <p><a href="https://github.com/lanemoseley/gpaCalc-PY" target="_blank">Desktop GPA Calculator</a> - written in Python using the Tk Interface</p>
-   <p><a href="https://lanemoseley.github.io/gpaCalc/gpaCalculator.html" target="_blank">Browser GPA Calculator</a> - written in Javascript (<a href="https://github.com/lanemoseley/gpaCalc-JS" target="_blank">Source</a>)</p>
-   <p><a href="https://github.com/lanemoseley/anagrams" target="_blank">Anagram Finder</a> - a program to find all anagrams of a given word using permutation, written in C++</p>
-   <p>*All class projects are kept private, but can be made available upon request.  Completed class projects include a MS Paint look-alike program written in C++ that uses the freeglut toolkit and showcases the use of inheritance as well as a 2048 'AI' player, also written in C++, that uses the Expectimax search algorithm to consistently beat the 2048 board game.</p>
-   <br/>
-
-
-
-   <h2>Resume</h2>
-   <object data="https://lanemoseley.github.io/Resume.pdf" type="application/pdf" width="100%" height="1000">
-      Unable to display embedded content. <a href="https://lanemoseley.github.io/Resume.pdf">Click</a>  to download resume instead.
-   </object>
-   </div>
+    <p class="feed-subscribe">
+      <a href="{{ 'feed.xml' | relative_url }}">
+        <svg class="svg-icon orange"><use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><span>Subscribe</span>
+      </a>
+    </p>
+  {%- endif -%}
 
 </div>
