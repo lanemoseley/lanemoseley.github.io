@@ -59,7 +59,7 @@ cp <install_dir>/apps/redmine/htdocs/extra/svn/Redmine.pm <install_dir>/perl/lib
   * Note: It doesn't matter where the directories are created as long as the permissions are correct. Just adjust the SVN repository path as needed in the following steps.
 
 * Alternatively, if migrating old SVN repositories to a new server try to use the same path. This makes it possible to simply copy the root repository directory to the new server and re-adjust permissions.
-  * For example, if repositories were located in '/srv/repos/svn' on the old server:  
+  * For example, if repositories were located in ```/srv/repos/svn``` on the old server:  
     ```mkdir /srv/repos```  
     ```scp -r old_user@old_host:/srv/repos/svn /srv/repos```  
     ```chown -R root:daemon /srv/repos/```  
