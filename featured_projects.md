@@ -4,7 +4,7 @@ title: Featured Projects
 permalink: /featured_projects/
 ---
 
-<p><a href="https://github.com/lanemoseley/kattis-solutions" target="_blank">Kattis Solutions</a> - my solutions to Kattis problems, written in C++ and Python</p>
+<p><a href="https://github.com/lanemoseley/kattis-solutions" target="_blank">Kattis Solutions</a> - my solutions to Kattis problems, written in multiple languages</p>
    <p><a href="https://github.com/lanemoseley/BinaryClock" target="_blank">Binary Clock</a> - written in Python using the Tk Interface</p>
    <p><a href="https://github.com/lanemoseley/mini-paint" target="_blank">Mini Paint</a> - GUI program written in C++ using the GLUT library</p>
    <p><a href="https://github.com/lanemoseley/gpaCalc-PY" target="_blank">Desktop GPA Calculator</a> - written in Python using the Tk Interface</p>
