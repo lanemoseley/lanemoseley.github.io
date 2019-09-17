@@ -12,7 +12,7 @@ permalink: /featured_projects/
 
 [Desktop GPA Calculator](https://github.com/lanemoseley/gpaCalc-PY) - written in Python using the Tk Interface
 
-[Browser GPA Calculator](https://lanemoseley.github.io/gpaCalc/gpaCalculator.html) - written in Javascript ([Source](https://github.com/lanemoseley/gpaCalc-JS))
+[Browser GPA Calculator](/assets/gpaCalc-JS/gpaCalculator.html) - written in Javascript ([Source](https://github.com/lanemoseley/gpaCalc-JS))
 
 [Anagram Finder](https://github.com/lanemoseley/anagrams) - a program to find all anagrams of a given word using permutation, written in C++
 
