@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Migrate Redmine Between Servers"
 published: true
+pinned: false
+
+title: Migrate Redmine Between Servers
+author: Lane Moseley
 ---
-Author: Lane Moseley
 
 ### Migrate the MySQL Database
 * Generate a dump file of the old database (if there are multiple databases

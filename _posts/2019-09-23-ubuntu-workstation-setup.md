@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Ubuntu Workstation Setup"
 published: true
+pinned: false
+
+title: Ubuntu Workstation Setup
+author: Lane Moseley
 ---
-Author: Lane Moseley
 
 #### Installs:
 

@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Bitnami Redmine Advanced SVN Integration on CentOS 7"
 published: true
+pinned: false
+
+title: Bitnami Redmine Advanced SVN Integration on CentOS 7
+author: Lane Moseley
 ---
-Author: Lane Moseley   
 
 ### Important Notes on the Bitnami Redmine Stack:
 The Bitnami Redmine Stack is a very clean and simple way of installing Redmine.
