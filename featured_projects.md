@@ -10,6 +10,8 @@ permalink: /featured_projects/
 
 [Mini Paint](https://github.com/lanemoseley/mini-paint) - GUI program written in C++ using the GLUT library
 
+[iOS GPA Calculator](https://github.com/lanemoseley/notAnotherGpaCalculator) - written in Swift using Xcode
+
 [Desktop GPA Calculator](https://github.com/lanemoseley/gpaCalc-PY) - written in Python using the Tk Interface
 
 [Browser GPA Calculator](/assets/gpaCalc-JS/gpaCalculator.html) - written in Javascript ([Source](https://github.com/lanemoseley/gpaCalc-JS))
