@@ -1,5 +1,6 @@
 ---
-exclude: true
+layout: post
+published: true
 ---
 
 ## Privacy Policy
