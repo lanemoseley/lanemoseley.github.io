@@ -1,5 +1,5 @@
 ---
-permalink: /fastGPA/
+exclude: true
 ---
 
 ## Privacy Policy
