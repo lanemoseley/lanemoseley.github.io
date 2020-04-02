@@ -20,4 +20,4 @@ permalink: /featured_projects/
 
 **All class projects are kept private, but can be made available upon request.**
 
-Completed class projects include a paint program written in C++ (more robust than the mini-paint program listed above) that uses the freeglut toolkit and showcases the use of inheritance as well as a 2048 AI player, also written in C++, that uses the Expectimax search algorithm to consistently beat the 2048 board game.
+Completed class projects include a nonogram web app, a MOS Technology 6502 Emulator, an automated player for the 2048 game, and many, many more.
